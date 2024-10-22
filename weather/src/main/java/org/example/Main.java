@@ -35,20 +35,20 @@ public class Main {
 
                     int responseCode = conn.getResponseCode();
                     if (responseCode == 404) {
-                        System.out.println("ERROR 404 \nГород не найден. Пожалуйста, попробуйте еще раз.");
+                        System.out.println("ERROR 404 \nГород не найден. Пожалуйста, попробуйте еще раз.\n");
                         return;
                     }
                     if (responseCode == 400) {
-                        System.out.println("ERROR 400 \nЗапрос неправильно сформирован. Пожалуйста, попробуйте еще раз.");
+                        System.out.println("ERROR 400 \nЗапрос неправильно сформирован. Пожалуйста, попробуйте еще раз.\n");
                         return;
                     }
                     if (responseCode == 401) {
-                        System.out.println("ERROR 401 \nПроблемы с аутентификацией. Пожалуйста, попробуйте еще раз.");
+                        System.out.println("ERROR 401 \nПроблемы с аутентификацией. Пожалуйста, попробуйте еще раз.\n");
                         return;
                     }
                     if (responseCode == 500) {
                         System.out.println("ERROR 401 \nОшибка на сервере, которая может указывать на\n" +
-                                "временные проблемы с API. Пожалуйста, попробуйте еще раз.");
+                                "временные проблемы с API. Пожалуйста, попробуйте еще раз.\n");
                         return;
                     }
 
@@ -78,7 +78,7 @@ public class Main {
                     System.out.println("Температура: " + temperature + "C");
                     System.out.println("Влажность: " + humidity + "%");
                     System.out.println("Скорость ветра: " + speed + " м/с");
-                    System.out.println("Для выхода из программы напишите слово Выход");
+                    System.out.println("\nДля выхода из программы напишите слово Выход");
 
                     // System.out.println(response);
 
